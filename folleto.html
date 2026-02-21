@@ -100,37 +100,6 @@
             </p>
         </div>
 
-        <!-- SECCIÓN IA GEMINI: Palabra de Aliento -->
-        <div class="p-8 bg-blue-50 border-y border-blue-100">
-            <h3 class="text-lg font-bold text-blue-900 mb-3 flex items-center gap-2">
-                <i class="fa-solid fa-sparkles text-blue-500"></i>
-                Recibe una palabra de aliento ✨
-            </h3>
-            <p class="text-xs text-gray-600 mb-4">¿Cómo te sientes hoy? Escribe algo corto y deja que la IA busque una promesa bíblica para ti.</p>
-            
-            <div class="relative mb-4">
-                <input type="text" id="userInput" placeholder="Ej: Me siento solo, cansado de trabajar..." 
-                    class="w-full p-3 pr-10 rounded-xl border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm">
-            </div>
-
-            <button onclick="generateWord()" id="genBtn" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 rounded-xl transition duration-300 flex items-center justify-center gap-2 shadow-md">
-                <span>Generar Mensaje ✨</span>
-            </button>
-
-            <!-- Resultado de la IA -->
-            <div id="aiResponseContainer" class="hidden mt-6 animate-fade-in">
-                <div class="p-5 bg-white rounded-2xl border border-blue-100 shadow-sm">
-                    <p id="aiText" class="text-sm text-gray-700 italic leading-relaxed mb-4 text-center"></p>
-                    <div class="flex flex-col gap-2">
-                        <button onclick="speakText()" id="speakBtn" class="flex items-center justify-center gap-2 text-blue-600 text-xs font-bold uppercase tracking-wider bg-blue-50 py-2 rounded-lg hover:bg-blue-100">
-                            <i class="fa-solid fa-volume-high"></i> Escuchar Mensaje ✨
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="errorMessage" class="hidden mt-4 text-red-500 text-xs text-center p-2 bg-red-50 rounded-lg"></div>
-        </div>
 
         <!-- Sección de Identidad y Contacto -->
         <div class="p-8 bg-white text-gray-800">
@@ -309,4 +278,5 @@
         }
     </script>
 </body>
+
 </html>
